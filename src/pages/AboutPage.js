@@ -15,7 +15,7 @@ const AboutPage = () => {
             <div className="underline">
 
             </div>
-            <p>lorem20fdjhskfhlsajdfhksjdhlfkjsa jkfdas fkjhsadkjflh sdjkfhaskjdh</p>
+            <p>in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque</p>
           </div>
         </article>
       </Wrapper>
