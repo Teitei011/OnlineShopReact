@@ -12,10 +12,13 @@ import {
 
 const filter_reducer = (state, action) => {
   if (action.type === LOAD_PRODUCTS) {
+    let maxPrice = action.payload.map((p) => p.prices);
+    maxPrice = Math.max(...maxPrice);
     return {
       ...state,
       all_products: [...action.payload],
       filtered_products: [...action.payload],
+      filters: { ...state.filters, max_price: maxPrice, price: maxPrice },
     };
   }
 
@@ -42,10 +45,10 @@ const filter_reducer = (state, action) => {
       tempProducts = tempProducts.sort((a, b) => b.price - a.price);
     }
     if (sort === "name-a") {
-      tempProducts = tempProducts.sort((a, b) =>  a.name.localeCompare(b.name));
+      tempProducts = tempProducts.sort((a, b) => a.name.localeCompare(b.name));
     }
     if (sort === "name-z") {
-      tempProducts = tempProducts.sort((a, b) =>  b.name.localeCompare(a.name));
+      tempProducts = tempProducts.sort((a, b) => b.name.localeCompare(a.name));
     }
 
     return { ...state, filtered_products: tempProducts };
