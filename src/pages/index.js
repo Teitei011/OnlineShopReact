@@ -1,22 +1,20 @@
-import Home from "./HomePage";
-import Error from "./ErrorPage";
-import About from "./AboutPage";
-import AuthWrapper from "./AuthWrapper";
-import Cart from "./CartPage";
-import Checkout from "./CheckoutPage";
-import PrivateRoute from "./PrivateRoute";
-import Products from "./ProductsPage";
-import SingleProduct from "./SingleProductPage";
-
-
+import Home from './HomePage'
+import Products from './ProductsPage'
+import SingleProduct from './SingleProductPage'
+import About from './AboutPage'
+import Cart from './CartPage'
+import Error from './ErrorPage'
+import Checkout from './CheckoutPage'
+import PrivateRoute from './PrivateRoute'
+import AuthWrapper from './AuthWrapper'
 export {
-    Home,
-    Error,
-    About,
-    AuthWrapper,
-    Cart,
-    Checkout,
-    PrivateRoute,
-    Products,
-    SingleProduct
+  Home,
+  SingleProduct,
+  Cart,
+  About,
+  Error,
+  Checkout,
+  Products,
+  PrivateRoute,
+  AuthWrapper,
 }
